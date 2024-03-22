@@ -263,9 +263,9 @@ ul {
   min-height: 100px;
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 283px 1fr 1fr;
+  grid-template-rows: 275px 1fr 1fr;
   justify-items: center;
-  align-items: center;
+  align-items: end;
   background-color: aqua;
 }
 
