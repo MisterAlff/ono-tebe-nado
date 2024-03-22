@@ -262,5 +262,27 @@ ul {
   padding-right: 24px;
   min-height: 100px;
   display: grid;
-  grid-template-columns: 334px auto;
+  grid-template-columns: 334px 1fr;
+  grid-template-rows: 283px 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.about__logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 240px;
+  width: 240px;
+  border-radius: 50%;
+  background-color: #000;
+
+}
+
+.about__logo-image {
+  height: 114px;
+  width: 148px;
+  
 }
