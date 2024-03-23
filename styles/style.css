@@ -242,7 +242,6 @@ ul {
 }
 
 .lots__look-more-link {
-  font-family: Raleway;
   font-weight: 400;
   display: block;
   font-size: 20px;
@@ -263,10 +262,15 @@ ul {
   min-height: 100px;
   display: grid;
   grid-template-columns: 334px 1fr;
-  grid-template-rows: 275px 1fr 1fr;
+  grid-template-rows: 275px 1fr 1.2fr;
+  grid-template-areas:
+    "logo title"
+    ". text-first"
+    ". text-second";
   justify-items: center;
   align-items: end;
-  background-color: aqua;
+  column-gap: 25px;
+  row-gap: 6px;
 }
 
 .about__logo {
@@ -278,11 +282,48 @@ ul {
   width: 240px;
   border-radius: 50%;
   background-color: #000;
-
+  grid-area: logo;
 }
 
 .about__logo-image {
   height: 114px;
   width: 148px;
-  
 }
+
+.about__title {
+  text-transform: uppercase;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 46.96px;
+  text-align: left;
+  justify-self: start;
+  padding-bottom: 93px;
+  grid-area: title;
+}
+
+.about__text {
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  align-self: flex-start;
+}
+
+.about__text_first {
+  grid-area: text-first;
+  letter-spacing: 0.1px;
+}
+
+.about__text_second {
+  grid-area: text-second;
+  letter-spacing: 0.01px;
+}
+
+.spece_min {
+  letter-spacing: 0.1px;
+}
+
+.spece_max {
+  letter-spacing: 0.3px;
+} 
