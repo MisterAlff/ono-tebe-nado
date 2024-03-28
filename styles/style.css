@@ -1,19 +1,27 @@
 /* место для вашего кода */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   color: #000000;
 }
 
 .header {
   margin-top: 92px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 50px;
+  padding-right: 50px;
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  justify-items: end;
 }
 
 .header_menu {
   font-size: 18px;
   font-weight: 400;
+  padding-top: 5px;
+  justify-self: start;
 }
 
 .header__links-list-item_no-bullit {
@@ -25,8 +33,6 @@ body {
   display: flex;
   list-style: circle;
   height: 100%;
-  padding-left: 26.5px;
-  padding-top: 44px;
   gap: 32px;
 }
 
@@ -56,17 +62,16 @@ body {
   flex-direction: column;
   font-size: 18px;
   line-height: 24.3px;
-  align-items: start;
+  min-width: 240px;
 }
 
 .header__address {
   padding-top: 5px;
-  padding-left: 187px;
 }
 
 .address a {
   letter-spacing: 0.01em;
-  text-underline-offset: 5px;
+  text-underline-offset: 4px;
 }
 
 .cover {
@@ -159,7 +164,6 @@ body {
 
 .lots {
   margin-top: 184px;
-  height: 692px;
   padding-left: 24px;
   padding-right: 24px;
 }
@@ -271,7 +275,7 @@ body {
   justify-items: center;
   align-items: end;
   column-gap: 25px;
-  row-gap: 6px;
+  row-gap: 9px;
 }
 
 .about__logo {
@@ -298,7 +302,7 @@ body {
   line-height: 46.96px;
   text-align: left;
   justify-self: start;
-  padding-bottom: 93px;
+  padding-bottom: 91px;
   grid-area: title;
 }
 
@@ -365,7 +369,16 @@ body {
 .footer__social-list {
   list-style-type: none;
   display: flex;
-  width: 240px;
   gap: 48px;
   justify-self: end;
+}
+
+.footer__social-link {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+
+.footer__social-icon {
+  height: 100%;
 }
